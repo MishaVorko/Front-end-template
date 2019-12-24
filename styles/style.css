@@ -35,11 +35,10 @@ body{
     color: #333;
     text-transform: uppercase;
     line-height: 80px;
-    font-size: 26px;
-    padding: 0 0 0 1px
+    font-size: 26px
 }
 .logo__href span{
-    padding-right: 15px;
+    padding-right: 12px;
 }
 /*-Font weight modificators-*/
 .logo__latter_bold_1{
