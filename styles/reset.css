@@ -211,3 +211,8 @@ svg {
 */
   overflow: hidden;
 }
+
+/*Custom styles*/
+a{
+    text-decoration: none
+}

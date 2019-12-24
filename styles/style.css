@@ -1,0 +1,112 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    color: #666
+}
+
+
+/*-Header styles-*/
+.header{
+    height: 80px
+}
+.header-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1)
+}
+.header-menu .container{
+    height: 80px;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden
+}
+.header__row{
+    display: flex;
+    flex: 0 1 100%;
+}
+.logo__href{
+    color: #333;
+    text-transform: uppercase;
+    line-height: 80px;
+    font-size: 26px;
+    padding: 0 0 0 1px
+}
+.logo__href span{
+    padding-right: 15px;
+}
+/*-Font weight modificators-*/
+.logo__latter_bold_1{
+    font-weight: 100
+}
+.logo__latter_bold_3{
+    font-weight: 300
+}
+.logo__latter_bold_4{
+    font-weight: 400
+}
+.logo__latter_bold_7{
+    font-weight: 700
+}
+.logo__latter_bold_9{
+    font-weight: 900
+}
+/*-Main nav-*/
+.header__main-menu{
+    flex: 1 1 auto
+}
+.header__menu_row{
+    display: flex;
+    justify-content: flex-end
+}
+.header__menu_list a{
+    display: block;
+    color: #666;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    padding: 30px 20px;
+    margin: 0 0
+}
+.header__menu_list:hover a, .header__menu_list.active a {
+    color: #333;
+}
+/*-Search Form-*/
+.header__search-form{
+    position: relative;
+    height: 40px;
+    margin: 20px 0 20px 19px;
+    padding-left: 49px;
+    border-left: 1px solid #ccc;
+    font-family: FontAwesome;
+}
+.header__search-form:before {
+    content: "\f002";
+    position: absolute;
+    left: 28px;
+    top: -2px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #cccc;
+}
+.header__search-form input{
+    width: 42px;
+    margin: 0;
+    padding: 11px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 19px;
+    font-size: 13px;
+    color: #999;
+    border: none;
+}
