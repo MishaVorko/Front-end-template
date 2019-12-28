@@ -5,7 +5,17 @@ body{
     line-height: 20px;
     color: #666
 }
-
+img{
+    width: auto;
+    height: 100%
+}
+.flex-auto-centr{
+    flex: 1 1 auto;
+    justify-content: center
+}
+.p-relative{
+    position: relative
+}
 
 /*-Header styles-*/
 .header{
@@ -17,12 +27,13 @@ body{
     left: 0;
     width: 100%;
     z-index: 9999;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.1)
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    background-color: #fff
 }
-.header-menu .container{
-    height: 80px;
+.container{
     width: 100%;
     max-width: 1170px;
+    height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     overflow: hidden
@@ -108,4 +119,196 @@ body{
     font-size: 13px;
     color: #999;
     border: none;
+}
+
+/*-Main slider block-*/
+
+.top-slider{
+    background-image: url(../images/slider/slide1_bg.jpg);
+    background-repeat: repeat-x;
+    height: 615px;
+    background-color: #ccc;
+}
+.top-slider__row{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 11.8rem 0 2.5rem 0;
+    box-sizing: border-box;
+}
+.top-slider__hider-row{
+    display: flex;
+    margin-bottom: 15px
+}
+.top-slider__hider-row .top-slider__hider-item{
+    margin-right: 3px
+}
+.top-slider__hider-row .top-slider__hider-item span{
+    font-weight: 100;
+    line-height: 80px;
+    font-size: 80px;
+    color: #333
+}
+.top-slider__hider-row .top-slider__hider-item:first-child span{
+    font-weight: 500
+}
+
+.top-slider__text-item{
+    width: 700px;
+    font-weight: 300;
+    line-height: 34px;
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px
+}
+.top-slider__column2{
+    flex: 1 1 auto
+}
+/*- Toggle slier block -*/
+.top-slider__toggle-row{
+    display: flex;
+    width: 100%
+}
+.top-slider__toggle-column{
+    display: flex;
+    align-items: center
+}
+.togle-buttons__button-l a, .togle-buttons__button-r a{
+    padding: 20px 30px;
+    position: relative;
+    background: #fff;
+    margin-right: 1px;
+    transition-duration: 600ms
+}
+.togle-buttons__button-l a::after, .togle-buttons__button-r a::after, .togle-buttons__button-l a::before, .togle-buttons__button-r a::before{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 2px;
+    background-color: #333
+}
+.togle-buttons__button-l a::after{
+    transform: rotate(-45deg);
+    left: 25px;
+    top: 24px
+}
+.togle-buttons__button-l a::before{
+    transform: rotate(45deg);
+    left: 25px;
+    top: 30px
+}
+
+.togle-buttons__button-r a::after{
+    transform: rotate(45deg);
+    left: 25px;
+    top: 24px
+}
+.togle-buttons__button-r a::before{
+    transform: rotate(-45deg);
+    left: 25px;
+    top: 30px
+}
+.togle-buttons__button-l a:hover, .togle-buttons__button-r a:hover{
+    background: #333
+}
+.togle-buttons__button-l a:hover::after, .togle-buttons__button-l a:hover::before,
+.togle-buttons__button-r a:hover::after, .togle-buttons__button-r a:hover::before{
+    background: #fff
+}
+/*- -*/
+.top-slider__img-toggle-wrap{
+    margin-right: 8px;
+    height: 75px;
+    padding: 5px 0 0 0;
+    width: 100px;
+    background: inherit;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.15);
+}
+/*- Class active in future -*/
+.top-slider__img-toggle-wrap:hover::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    min-height: 70px;
+    box-sizing: border-box;
+    top: 5px;
+    left: 0;
+    border: 5px solid white
+}
+.top-slider__img-toggle-wrap:hover::before{
+    content: '';
+    position: absolute;
+    left: 40%;
+    top: 0px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 10px solid white
+}
+/*- //Class active in future -*/
+
+.top-slider__read-more_btn{
+    position: relative;
+    background: #fff;
+    padding: 22px 60px 20px 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #333
+}
+.top-slider__read-more_btn a::after, .top-slider__read-more_btn a::before{
+    content:'';
+    background: #fff;
+    position: absolute;
+    background-color: #333;
+    width: 10px;
+    height: 3px
+    
+}
+.top-slider__read-more_btn a::after{
+    transform: rotate(45deg);
+    right: 30px;
+    top: 27px
+}
+.top-slider__read-more_btn a::before{
+    transform: rotate(-45deg);
+    right: 30px;
+    top: 33px
+}
+/*- Hover animation wiil be added with jQuery -*/
+.top-slider__read-more_btn a:hover{
+}
+/*--//--*/
+/*-  -*/
+.min-advantages{
+    padding: 74px 0 40px 0
+}
+.min-advantages-row{
+    display: flex;
+    justify-content: space-between
+}
+.min-advantages-column{
+    flex: 0 1 23.5%
+}
+.min-advantages-header{
+    text-transform: none;
+    font-weight: 300;
+    font-size: 20px;
+    color: #333;
+}
+.min-advantages-header span:first-child {
+    font-weight: 400
+}
+.min-hr{
+    margin: 19px 0 15px 0;
+    height: 2px;
+    background-color: #ccc;
+    width: 30px
+}
+.min-advantages-text{
+    padding-bottom: 9px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #666;
 }
