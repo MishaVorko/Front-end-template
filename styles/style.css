@@ -140,7 +140,7 @@ input:focus{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999!important;
+    z-index: 150;
     box-shadow: 0 2px 3px rgba(0,0,0,0.1);
     background-color: #fff
 }
