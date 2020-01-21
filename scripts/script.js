@@ -1,5 +1,6 @@
 $(document).ready(function (){
    
+    // NiceScrol function
     function niceScrollfunc(){
         $("body").niceScroll({
         cursorcolor: "#333",
@@ -13,7 +14,21 @@ $(document).ready(function (){
     });
     }
     
+    function owl_Carousel(){
+        $("#owl-carousel1").owlCarousel({
+            items: 4,
+            nav: true,
+            dots: false,
+            navText: ['<div class="team__button-l slider-tgl__btn-l"><a class="p-relative"></a></div>', '<div class="team__button-r slider-tgl__btn-r"><a class="p-relative"></a> </div>']
+     });
+    }
+    
+      
+    
+     
     
     
-    niceScrollfunc()
+    
+    niceScrollfunc();
+    owl_Carousel()
 })
